@@ -1,2 +1,1 @@
-# tech-talkers-brainstorming
-Tech Talkers brainstorming workspace
+# Tech Talkers brainstorming workspace
