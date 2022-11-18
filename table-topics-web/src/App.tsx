@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./App.css";
 import topics from "./assets/topics.json";
 
 const App = () => {
@@ -10,10 +9,8 @@ const App = () => {
   };
 
   return (
-    <div className="flex flex-row">
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-
-      <div className="underline">{topics[topicIndex]}</div>
+    <div>
+      <div className="underline mt-2">{topics[topicIndex]}</div>
 
       <button onClick={handleClickNewTopic}>New Topic</button>
     </div>

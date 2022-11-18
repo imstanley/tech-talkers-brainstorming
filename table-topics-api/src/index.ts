@@ -1,3 +1,5 @@
+import * as dotenv from "dotenv";
+dotenv.config();
 import express from "express";
 import { sequelize } from "./config/database";
 import { Topic } from "./models/topic";
@@ -25,6 +27,7 @@ app.get("/test-connection", async (req, res) => {
 
 app.get("/synchronize-schema", async (req, res) => {
   const syncResult = await Topic.sync({ force: true });
+  console.log(syncResult);
   res.send(`Synchronization result: ${syncResult}`);
 });
 
