@@ -10,8 +10,10 @@ const App = () => {
   };
 
   return (
-    <div>
-      {topics[topicIndex]}
+    <div className="flex flex-row">
+      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+
+      <div className="underline">{topics[topicIndex]}</div>
 
       <button onClick={handleClickNewTopic}>New Topic</button>
     </div>
