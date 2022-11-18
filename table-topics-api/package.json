@@ -4,6 +4,8 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
+    "start": "tsc && node dist/index",
+    "lint": "eslint . --ext .ts",
     "dev": "nodemon index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
