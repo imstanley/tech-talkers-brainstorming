@@ -1,18 +1,21 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
 import "./App.css";
 import topics from "./assets/topics.json";
 
-console.log(topics);
+const App = () => {
+  const [topicIndex, setTopicIndex] = useState(0);
 
-function App() {
+  const handleClickNewTopic = () => {
+    setTopicIndex(Math.floor(Math.random() * topics.length));
+  };
+
   return (
     <div>
-      {topics.map((topic: string) => (
-        <div>{topic}</div>
-      ))}
+      {topics[topicIndex]}
+
+      <button onClick={handleClickNewTopic}>New Topic</button>
     </div>
   );
-}
+};
 
 export default App;
