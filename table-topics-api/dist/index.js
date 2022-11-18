@@ -27,7 +27,7 @@ const testConnection = () => __awaiter(void 0, void 0, void 0, function* () {
     }
 });
 app.get("/", (req, res) => {
-    res.send("Hello World!");
+    res.send("Hello Tech Talkers!");
 });
 app.get("/test-connection", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const testResult = yield testConnection();

@@ -15,7 +15,7 @@ const testConnection = async () => {
 };
 
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  res.send("Hello Tech Talkers!");
 });
 
 app.get("/test-connection", async (req, res) => {
